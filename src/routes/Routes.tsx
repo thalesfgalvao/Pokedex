@@ -1,12 +1,30 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import { Home } from '../pages/Home/Home'
+import React from 'react'
+import { Redirect, Route } from 'react-router-dom'
+import PublicRoute from './PubliceRoute'
 
-export const Routes = () => {
-  return (
-    <BrowserRouter>
-      <Switch>
-        <Route path="/" component={Home} exact />
-      </Switch>
-    </BrowserRouter>
-  )
+const Dashboard = React.lazy(() => import('../pages/Dashboard'))
+
+//attribute -  path : string - exact: boolean - route : component (wich router component will render the att component)
+//at end, put the route in array "routes"
+
+//root
+const LoginRedirect = () => <Redirect to="/home" />
+
+const root = {
+  path: '/',
+  component: LoginRedirect,
+  exact: true,
+  route: Route
 }
+
+//dashboard
+const dashboard = {
+  path: '/dashboard',
+  component: Dashboard,
+  exact: false,
+  route: PublicRoute
+}
+
+const routes = [root, dashboard]
+
+export default routes

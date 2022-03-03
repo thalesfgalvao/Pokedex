@@ -1,7 +1,7 @@
-import { GlobalStyle } from './styles/GlobalStyle'
-import { Routes } from './routes/Routes'
 import { ThemeProvider } from 'styled-components'
-import { theme } from './styles/theme'
+import Routes from './routes'
+import GlobalStyle from './styles/GlobalStyle'
+import theme from './styles/theme'
 
 export const App = () => {
   return (

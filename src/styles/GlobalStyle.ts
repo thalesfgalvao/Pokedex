@@ -1,7 +1,6 @@
-import { css } from 'styled-components'
-import { createGlobalStyle } from 'styled-components'
+import { css, createGlobalStyle } from 'styled-components'
 
-export const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
 
 * {
     margin: 0;
@@ -19,9 +18,9 @@ export const GlobalStyle = createGlobalStyle`
       font-size: 62.5%;
     }
     body {
-      font-family: ${theme.};
+      font-family: ${theme.fonts.family.default};
       font-size: ${theme.fonts.sizes.medium};
-      background-color: ${theme.background.dark};
+      background-color: ${theme.colors.dark};
     }
     ol,
     li {
@@ -32,3 +31,5 @@ export const GlobalStyle = createGlobalStyle`
     }
   `}
 `
+
+export default GlobalStyle

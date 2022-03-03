@@ -1,14 +1,10 @@
-export const theme = {
-  background: {
-    dark: '#0F0F26',
-    light: '#FFFFFF'
-  },
+export default {
   colors: {
     successColor: '#6AE058',
     warningColor: '#E09B35',
     errorColor: '#E33F36',
-    white: '#FFFFFF',
-    black: '#000000'
+    white: '#f5f5f5',
+    dark: '#262626'
   },
   fonts: {
     family: {
@@ -39,4 +35,4 @@ export const theme = {
       xhuge: '6.4rem'
     }
   }
-}
+} as const
