@@ -1,6 +1,7 @@
 import * as S from './styles'
 import Button from '../../components/DataEntry/Button'
 import Input from '../../components/DataEntry/Input'
+import PostCards from '../../components/PostCard'
 
 const Dashboard = () => {
   return (
@@ -11,6 +12,7 @@ const Dashboard = () => {
           <Input placeholder="Type a pokemon" />
           <Button>Search</Button>
         </S.DataWrapper>
+        <PostCards />
       </S.Container>
     </S.Wrapper>
   )
