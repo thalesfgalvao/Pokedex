@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components'
-import ClipLoader from 'react-spinners/ClipLoader'
 
 export const Wrapper = styled.div``
 
@@ -16,5 +15,3 @@ export const Button = styled.button`
     cursor: pointer;
   `}
 `
-
-export const Loader = styled(ClipLoader)``

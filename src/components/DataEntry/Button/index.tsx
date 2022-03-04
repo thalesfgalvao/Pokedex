@@ -1,22 +1,14 @@
-import { useState } from 'react'
 import * as S from './styles'
 
 interface IButtonProps {
-  children: string
+  children: React.ReactNode
+  onClick: () => void
 }
 
-const Button = ({ children }: IButtonProps) => {
-  const [isLoading, setIsLoading] = useState(false)
-
-  const handleClick = () => {
-    setIsLoading(!isLoading)
-  }
-
+const Button = ({ children, onClick }: IButtonProps) => {
   return (
     <S.Wrapper>
-      <S.Button onClick={handleClick}>
-        {isLoading ? <S.Loader size="1rem" color="white" /> : children}
-      </S.Button>
+      <S.Button onClick={onClick}>{children}</S.Button>
     </S.Wrapper>
   )
 }
