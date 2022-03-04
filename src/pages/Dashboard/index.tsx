@@ -4,6 +4,7 @@ import Input from '../../components/DataEntry/Input'
 import PostCards from '../../components/PostCard'
 import { useState } from 'react'
 import api from '../../services/api'
+import Balls from '../../components/Balls'
 
 const Dashboard = () => {
   const [typedPokemon, setTypedPokemon] = useState('')
@@ -38,6 +39,7 @@ const Dashboard = () => {
         </S.DataWrapper>
         {pokemon && <PostCards />}
       </S.Container>
+      <Balls />
     </S.Wrapper>
   )
 }
