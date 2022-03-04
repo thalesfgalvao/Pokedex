@@ -4,7 +4,8 @@ export default {
     warningColor: '#E09B35',
     errorColor: '#E33F36',
     white: '#f5f5f5',
-    dark: '#262626'
+    dark: '#262626',
+    grey: '#4A4A4A'
   },
   fonts: {
     family: {
@@ -13,26 +14,32 @@ export default {
     },
     sizes: {
       xsmall: '0.8rem',
-      small: '1.6rem',
-      medium: '2.4rem',
-      large: '3.2rem',
-      xlarge: '4.0rem',
-      xxlarge: '4.8rem',
-      huge: '5.6rem',
-      xhuge: '6.4rem'
+      small: '1.2rem',
+      medium: '1.6rem',
+      large: '2rem',
+      xlarge: '2.5rem',
+      xxlarge: '2.5rem',
+      huge: '3.5rem',
+      xhuge: '5rem'
     },
     screens: {
       medium: '(max-width: 768px)'
     },
     spacings: {
       xsmall: '0.8rem',
-      small: '1.6rem',
-      medium: '2.4rem',
-      large: '3.2rem',
-      xlarge: '4.0rem',
-      xxlarge: '4.8rem',
-      huge: '5.6rem',
-      xhuge: '6.4rem'
+      small: '1.2rem',
+      medium: '1.6rem',
+      large: '2rem',
+      xlarge: '2.5rem',
+      xxlarge: '2.5rem',
+      huge: '3.5rem',
+      xhuge: '5rem'
+    },
+    weight: {
+      light: '200',
+      default: '300',
+      medium: '500',
+      bold: '700'
     }
   }
 } as const

@@ -21,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
       font-family: ${theme.fonts.family.default};
       font-size: ${theme.fonts.sizes.medium};
       background-color: ${theme.colors.dark};
+      color: ${theme.colors.white};
     }
     ol,
     li {

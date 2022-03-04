@@ -8,7 +8,7 @@ const Dashboard = React.lazy(() => import('../pages/Dashboard'))
 //at end, put the route in array "routes"
 
 //root
-const LoginRedirect = () => <Redirect to="/home" />
+const LoginRedirect = () => <Redirect to="/dashboard" />
 
 const root = {
   path: '/',
