@@ -1,14 +1,17 @@
-import Balls from '../../components/Balls'
-import * as S from './style'
-export type HomeProps = {
-  children: React.ReactNode
-}
+import * as S from './styles'
+import Button from '../../components/DataEntry/Button'
+import Input from '../../components/DataEntry/Input'
 
-const Dashboard = ({ children }: HomeProps) => {
+const Dashboard = () => {
   return (
     <S.Wrapper>
-      <Balls />
-      <S.Container>{children}</S.Container>
+      <S.Container>
+        <S.WelcomeText>Welcome to Pokedex!</S.WelcomeText>
+        <S.DataWrapper>
+          <Input placeholder="Type a pokemon" />
+          <Button>Search</Button>
+        </S.DataWrapper>
+      </S.Container>
     </S.Wrapper>
   )
 }

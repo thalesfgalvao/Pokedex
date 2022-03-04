@@ -3,14 +3,7 @@ import styled from 'styled-components'
 export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
-`
-
-export const Balls = styled.div`
-  display: flex;
-  align-items: center;
-  margin-top: 5rem;
-  width: 50rem;
-  height: 70rem;
+  z-index: 0;
 `
 
 export const BlueBall = styled.div`
