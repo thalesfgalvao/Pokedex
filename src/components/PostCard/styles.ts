@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   display: grid;
+  z-index: 500;
   grid-template-rows: 2fr 4fr 4fr;
   grid-template-columns: 6fr 6fr;
   background: linear-gradient(
@@ -15,7 +16,7 @@ export const Wrapper = styled.div`
   padding: 2rem 5rem;
   margin-top: 3rem;
   width: 45vh;
-  height: 50vh;
+  height: 55vh;
 `
 
 export const PokemonName = styled.h1`
