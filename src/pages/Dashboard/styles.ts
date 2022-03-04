@@ -1,3 +1,4 @@
+import { ClipLoader } from 'react-spinners'
 import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.main`
@@ -11,7 +12,6 @@ export const Container = styled.div`
   flex-direction: column;
   width: 85vh;
   height: 85vh;
-  border: 1px solid red;
   margin-top: 5rem;
   gap: 2rem;
 `
@@ -26,3 +26,5 @@ export const WelcomeText = styled.h1`
 export const DataWrapper = styled.div`
   display: flex;
 `
+
+export const Loader = styled(ClipLoader)``

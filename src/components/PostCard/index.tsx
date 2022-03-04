@@ -2,15 +2,11 @@ import * as S from './styles'
 
 interface IPostCards {
   pokemonName?: string
-  pokemonId?: string
-  pokemonType?: string
+  pokemonId?: React.FC
+  pokemonType?: React.FC
 }
 
-const PostCards = ({
-  pokemonName = 'bulbasaur',
-  pokemonId = '1',
-  pokemonType = 'grass'
-}: IPostCards) => {
+const PostCards = ({ pokemonName, pokemonId, pokemonType }: IPostCards) => {
   return (
     <S.Wrapper>
       <S.PokemonName>{pokemonName}</S.PokemonName>

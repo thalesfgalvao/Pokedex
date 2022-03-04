@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Wrapper = styled.div`
   display: grid;
   grid-template-rows: 2fr 4fr 4fr;
-  grid-template-columns: 4fr 4fr;
+  grid-template-columns: 6fr 6fr;
   background: linear-gradient(
     152.97deg,
     rgba(255, 255, 255, 0.2) 0%,
