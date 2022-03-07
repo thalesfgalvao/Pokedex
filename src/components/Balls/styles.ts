@@ -1,16 +1,9 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-  display: flex;
-  justify-content: center;
-`
-
-export const Balls = styled.div`
-  display: flex;
-  align-items: center;
-  margin-top: 5rem;
-  width: 50rem;
-  height: 70rem;
+  position: absolute;
+  z-index: 0;
+  margin-top: 25rem;
 `
 
 export const BlueBall = styled.div`
@@ -32,7 +25,7 @@ export const RedBall = styled.div`
   position: absolute;
   width: 23rem;
   height: 23rem;
-  margin-left: 25rem;
+  margin-left: 15rem;
   border-radius: 100%;
   background: radial-gradient(
     81.25% 81.25% at 67.32% 18.75%,
