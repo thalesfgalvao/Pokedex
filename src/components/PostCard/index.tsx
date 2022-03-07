@@ -1,23 +1,29 @@
 import * as S from './styles'
 
-interface IPostCards {
+export interface IPostCards {
   pokemonName?: string
-  pokemonId?: React.FC
-  pokemonType?: React.FC
+  pokemonId?: string
+  pokemonWeight?: string
+  pokemonImage?: string
 }
 
-const PostCards = ({ pokemonName, pokemonId, pokemonType }: IPostCards) => {
+const PostCards = ({
+  pokemonName,
+  pokemonId,
+  pokemonWeight,
+  pokemonImage
+}: IPostCards) => {
   return (
     <S.Wrapper>
       <S.PokemonName>{pokemonName}</S.PokemonName>
-      <S.PokemonSprite />
+      <S.PokemonSprite src={pokemonImage} />
       <S.LeftInformation>
-        ID
+        <S.Subtitle>ID</S.Subtitle>
         <S.PokemonInformation>{pokemonId}</S.PokemonInformation>
       </S.LeftInformation>
       <S.Rightinformation>
-        TYPE
-        <S.PokemonInformation>{pokemonType}</S.PokemonInformation>
+        <S.Subtitle>Weight</S.Subtitle>
+        <S.PokemonInformation>{pokemonWeight}</S.PokemonInformation>
       </S.Rightinformation>
     </S.Wrapper>
   )

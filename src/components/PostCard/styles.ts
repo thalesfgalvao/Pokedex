@@ -17,6 +17,7 @@ export const Wrapper = styled.div`
   margin-top: 3rem;
   width: 45vh;
   height: 55vh;
+  justify-content: center;
 `
 
 export const PokemonName = styled.h1`
@@ -28,6 +29,8 @@ export const PokemonName = styled.h1`
 export const PokemonSprite = styled.img`
   grid-row: 2;
   grid-column: 1/4;
+  width: 20rem;
+  justify-self: center;
   align-self: center;
 `
 
@@ -45,7 +48,7 @@ export const Rightinformation = styled.div`
   display: flex;
   gap: 5rem;
   flex-direction: column;
-  grid-column: 3/4;
+  grid-column: 2/3;
   grid-row: 3;
   gap: 0.2rem;
   font-weight: bold;
@@ -53,4 +56,11 @@ export const Rightinformation = styled.div`
 
 export const PokemonInformation = styled.p`
   font-weight: lighter;
+  align-self: center;
+  justify-self: center;
+`
+
+export const Subtitle = styled.p`
+  align-self: center;
+  justify-self: center;
 `
