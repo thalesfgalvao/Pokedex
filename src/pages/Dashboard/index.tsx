@@ -6,16 +6,24 @@ import { useState } from 'react'
 import api from '../../services/api'
 import Balls from '../../components/Balls'
 
+interface IPokemonValues {
+  id: string
+  name: string
+  weight: string
+  sprites: {
+    front_default: string
+  }
+}
+
 const Dashboard = () => {
   const [typedPokemon, setTypedPokemon] = useState('')
-  const [pokemon, setPokemon] = useState()
+  const [pokemon, setPokemon] = useState<IPokemonValues>()
   const [isLoading, setIsLoading] = useState(false)
 
   const handleClick = async () => {
     setIsLoading(true)
     try {
       const response = await api.get(`/pokemon/${typedPokemon}`)
-      console.log(response.data)
       setPokemon(response.data)
       setIsLoading(false)
     } catch (error) {
@@ -37,7 +45,14 @@ const Dashboard = () => {
             {isLoading ? <S.Loader size="1rem" color="white" /> : 'Search'}
           </Button>
         </S.DataWrapper>
-        {pokemon && <PostCards />}
+        {pokemon && (
+          <PostCards
+            pokemonName={pokemon.name}
+            pokemonId={pokemon.id}
+            pokemonWeight={pokemon.weight}
+            pokemonImage={pokemon.sprites.front_default}
+          />
+        )}
       </S.Container>
       <Balls />
     </S.Wrapper>
