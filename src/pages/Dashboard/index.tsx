@@ -24,7 +24,6 @@ const Dashboard = () => {
     setIsLoading(true)
     try {
       const response = await api.get(`/pokemon/${typedPokemon}`)
-      console.log(response.data)
       setPokemon(response.data)
       setIsLoading(false)
     } catch (error) {
